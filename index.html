@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Portfolio Analyzer | Transform Your Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Noise Texture Overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <path d="M16 2L21 12H27L22 18L25 28L16 22L7 28L10 18L5 12H11L16 2Z" fill="url(#gradient1)"/>
+                    <defs>
+                        <linearGradient id="gradient1" x1="5" y1="2" x2="27" y2="28">
+                            <stop offset="0%" style="stop-color:#667eea"/>
+                            <stop offset="100%" style="stop-color:#764ba2"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>GitAnalyzer</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#analyzer" class="nav-link nav-link-cta">Analyze Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span>✨ AI-Powered Portfolio Intelligence</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Transform Your</span>
+                <span class="title-line gradient-text">GitHub Portfolio</span>
+                <span class="title-line">Into Recruiter Gold</span>
+            </h1>
+            <p class="hero-subtitle">
+                Analyze, optimize, and elevate your GitHub profile with AI-driven insights.
+                <br>Stand out to recruiters in under 2 minutes.
+            </p>
+            <div class="hero-cta">
+                <a href="#analyzer" class="btn btn-primary">
+                    Start Free Analysis
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </a>
+                <a href="#how-it-works" class="btn btn-secondary">
+                    See How It Works
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">10K+</div>
+                    <div class="stat-label">Profiles Analyzed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">Improvement Rate</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">&lt;2min</div>
+                    <div class="stat-label">Analysis Time</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-card card-1">
+                <div class="card-icon">📊</div>
+                <div class="card-title">Portfolio Score</div>
+                <div class="score-display">
+                    <div class="score-number">87</div>
+                    <div class="score-label">/100</div>
+                </div>
+            </div>
+            <div class="floating-card card-2">
+                <div class="card-icon">✅</div>
+                <div class="card-title">Code Quality</div>
+                <div class="quality-bars">
+                    <div class="quality-bar" style="--width: 90%;"></div>
+                    <div class="quality-bar" style="--width: 75%;"></div>
+                    <div class="quality-bar" style="--width: 85%;"></div>
+                </div>
+            </div>
+            <div class="floating-card card-3">
+                <div class="card-icon">🎯</div>
+                <div class="card-title">Top Skills</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">React</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="section-header">
+            <h2 class="section-title">Why Choose GitAnalyzer</h2>
+            <p class="section-subtitle">Comprehensive analysis that recruiters actually look for</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path d="M20 5L25 15L35 17L27.5 25L29 35L20 30L11 35L12.5 25L5 17L15 15L20 5Z" stroke="url(#grad1)" stroke-width="2"/>
+                        <defs>
+                            <linearGradient id="grad1">
+                                <stop offset="0%" style="stop-color:#667eea"/>
+                                <stop offset="100%" style="stop-color:#764ba2"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Instant Portfolio Score</h3>
+                <p class="feature-description">Get a comprehensive score based on documentation, code quality, consistency, and impact in seconds.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <rect x="5" y="10" width="30" height="25" rx="2" stroke="url(#grad2)" stroke-width="2"/>
+                        <path d="M5 15H35M12 5V10M28 5V10" stroke="url(#grad2)" stroke-width="2"/>
+                        <defs>
+                            <linearGradient id="grad2">
+                                <stop offset="0%" style="stop-color:#f093fb"/>
+                                <stop offset="100%" style="stop-color:#f5576c"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Activity Insights</h3>
+                <p class="feature-description">Understand your commit patterns, consistency, and contribution frequency from a recruiter's lens.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path d="M8 20L18 30L32 10" stroke="url(#grad3)" stroke-width="3" stroke-linecap="round"/>
+                        <defs>
+                            <linearGradient id="grad3">
+                                <stop offset="0%" style="stop-color:#4facfe"/>
+                                <stop offset="100%" style="stop-color:#00f2fe"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Actionable Recommendations</h3>
+                <p class="feature-description">Receive specific, prioritized suggestions to improve your profile's impact and discoverability.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <circle cx="20" cy="20" r="15" stroke="url(#grad4)" stroke-width="2"/>
+                        <path d="M20 10V20L27 25" stroke="url(#grad4)" stroke-width="2" stroke-linecap="round"/>
+                        <defs>
+                            <linearGradient id="grad4">
+                                <stop offset="0%" style="stop-color:#fa709a"/>
+                                <stop offset="100%" style="stop-color:#fee140"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Real-Time Analysis</h3>
+                <p class="feature-description">Get results in under 2 minutes with live processing and instant feedback on your repositories.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path d="M10 25L20 10L30 25H10Z" stroke="url(#grad5)" stroke-width="2"/>
+                        <path d="M15 25V35H25V25" stroke="url(#grad5)" stroke-width="2"/>
+                        <defs>
+                            <linearGradient id="grad5">
+                                <stop offset="0%" style="stop-color:#a8edea"/>
+                                <stop offset="100%" style="stop-color:#fed6e3"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Repository Health</h3>
+                <p class="feature-description">Evaluate README quality, code structure, and documentation across all your public repositories.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <circle cx="20" cy="20" r="8" stroke="url(#grad6)" stroke-width="2"/>
+                        <circle cx="20" cy="20" r="14" stroke="url(#grad6)" stroke-width="2" stroke-dasharray="4 4"/>
+                        <defs>
+                            <linearGradient id="grad6">
+                                <stop offset="0%" style="stop-color:#ffecd2"/>
+                                <stop offset="100%" style="stop-color:#fcb69f"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Skill Detection</h3>
+                <p class="feature-description">Automatically identify and showcase your technical skills based on language usage and project complexity.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="section-header">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Three simple steps to portfolio excellence</p>
+        </div>
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-number">01</div>
+                <div class="step-content">
+                    <h3 class="step-title">Enter GitHub URL</h3>
+                    <p class="step-description">Simply paste your GitHub profile URL into our analyzer</p>
+                </div>
+                <div class="step-visual">
+                    <div class="url-input-demo">
+                        <span class="demo-text">github.com/username</span>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">02</div>
+                <div class="step-content">
+                    <h3 class="step-title">AI Analysis</h3>
+                    <p class="step-description">Our system analyzes your repositories, commits, and code quality</p>
+                </div>
+                <div class="step-visual">
+                    <div class="analysis-demo">
+                        <div class="scanning-bar"></div>
+                        <div class="scanning-bar"></div>
+                        <div class="scanning-bar"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">03</div>
+                <div class="step-content">
+                    <h3 class="step-title">Get Insights</h3>
+                    <p class="step-description">Receive your score, detailed breakdown, and actionable recommendations</p>
+                </div>
+                <div class="step-visual">
+                    <div class="results-demo">
+                        <div class="result-item">✓</div>
+                        <div class="result-item">✓</div>
+                        <div class="result-item">✓</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analyzer Section -->
+    <section id="analyzer" class="analyzer-section">
+        <div class="analyzer-container">
+            <div class="analyzer-header">
+                <h2 class="analyzer-title">Analyze Your GitHub Profile</h2>
+                <p class="analyzer-subtitle">Get your comprehensive portfolio score in under 2 minutes</p>
+            </div>
+            
+            <div class="analyzer-input-wrapper">
+                <div class="input-group">
+                    <svg class="input-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2C6.477 2 2 6.477 2 12C2 16.418 4.865 20.166 8.839 21.489C9.339 21.579 9.521 21.269 9.521 21.001C9.521 20.764 9.512 20.148 9.507 19.319C6.726 19.919 6.139 17.849 6.139 17.849C5.685 16.699 5.029 16.39 5.029 16.39C4.121 15.77 5.098 15.783 5.098 15.783C6.101 15.854 6.629 16.814 6.629 16.814C7.521 18.345 8.97 17.9 9.539 17.641C9.631 16.995 9.889 16.55 10.175 16.298C7.955 16.043 5.62 15.187 5.62 11.241C5.62 10.151 6.01 9.257 6.649 8.561C6.546 8.306 6.203 7.295 6.747 5.921C6.747 5.921 7.586 5.651 9.496 6.934C10.294 6.71 11.147 6.598 12 6.594C12.853 6.598 13.706 6.71 14.505 6.934C16.414 5.651 17.252 5.921 17.252 5.921C17.797 7.295 17.454 8.306 17.351 8.561C17.991 9.257 18.379 10.151 18.379 11.241C18.379 15.197 16.04 16.04 13.813 16.29C14.173 16.604 14.494 17.221 14.494 18.168C14.494 19.531 14.482 20.629 14.482 21.001C14.482 21.272 14.662 21.584 15.169 21.488C19.138 20.162 22 16.417 22 12C22 6.477 17.523 2 12 2Z" fill="currentColor"/>
+                    </svg>
+                    <input 
+                        type="text" 
+                        id="githubUrl" 
+                        class="github-input" 
+                        placeholder="Enter GitHub username or URL (e.g., username or github.com/username)"
+                        autocomplete="off"
+                    >
+                    <button id="analyzeBtn" class="analyze-btn">
+                        <span class="btn-text">Analyze Profile</span>
+                        <span class="btn-loader"></span>
+                    </button>
+                </div>
+                <p class="input-hint">Example: octocat or https://github.com/octocat</p>
+            </div>
+
+            <!-- Loading State -->
+            <div id="loadingState" class="loading-state">
+                <div class="loader-visual">
+                    <div class="loader-ring"></div>
+                    <div class="loader-ring"></div>
+                    <div class="loader-ring"></div>
+                </div>
+                <p class="loading-text">Analyzing your GitHub portfolio...</p>
+                <div class="loading-steps">
+                    <div class="loading-step active">
+                        <span class="step-icon">✓</span>
+                        <span>Fetching repositories</span>
+                    </div>
+                    <div class="loading-step">
+                        <span class="step-icon">⟳</span>
+                        <span>Analyzing code quality</span>
+                    </div>
+                    <div class="loading-step">
+                        <span class="step-icon">○</span>
+                        <span>Calculating score</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <div id="resultsSection" class="results-section">
+                <!-- Overall Score -->
+                <div class="score-card">
+                    <div class="score-header">
+                        <h3>Your Portfolio Score</h3>
+                        <p class="score-date"></p>
+                    </div>
+                    <div class="score-circle">
+                        <svg class="score-svg" viewBox="0 0 200 200">
+                            <circle class="score-bg" cx="100" cy="100" r="85"></circle>
+                            <circle class="score-progress" cx="100" cy="100" r="85" id="scoreCircle"></circle>
+                        </svg>
+                        <div class="score-value">
+                            <span id="overallScore" class="score-number">0</span>
+                            <span class="score-max">/100</span>
+                        </div>
+                    </div>
+                    <div class="score-rating">
+                        <span id="scoreRating" class="rating-badge">Calculating...</span>
+                    </div>
+                </div>
+
+                <!-- Metrics Breakdown -->
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-header">
+                            <span class="metric-icon">📚</span>
+                            <span class="metric-label">Documentation</span>
+                        </div>
+                        <div class="metric-score">
+                            <span id="docScore" class="metric-value">0</span>
+                            <span class="metric-max">/20</span>
+                        </div>
+                        <div class="metric-bar">
+                            <div id="docBar" class="metric-fill" style="--score: 0;"></div>
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-header">
+                            <span class="metric-icon">⚡</span>
+                            <span class="metric-label">Code Quality</span>
+                        </div>
+                        <div class="metric-score">
+                            <span id="codeScore" class="metric-value">0</span>
+                            <span class="metric-max">/25</span>
+                        </div>
+                        <div class="metric-bar">
+                            <div id="codeBar" class="metric-fill" style="--score: 0;"></div>
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-header">
+                            <span class="metric-icon">📊</span>
+                            <span class="metric-label">Activity</span>
+                        </div>
+                        <div class="metric-score">
+                            <span id="activityScore" class="metric-value">0</span>
+                            <span class="metric-max">/20</span>
+                        </div>
+                        <div class="metric-bar">
+                            <div id="activityBar" class="metric-fill" style="--score: 0;"></div>
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-header">
+                            <span class="metric-icon">🎯</span>
+                            <span class="metric-label">Impact</span>
+                        </div>
+                        <div class="metric-score">
+                            <span id="impactScore" class="metric-value">0</span>
+                            <span class="metric-max">/20</span>
+                        </div>
+                        <div class="metric-bar">
+                            <div id="impactBar" class="metric-fill" style="--score: 0;"></div>
+                        </div>
+                    </div>
+
+                    <div class="metric-card">
+                        <div class="metric-header">
+                            <span class="metric-icon">🏗️</span>
+                            <span class="metric-label">Organization</span>
+                        </div>
+                        <div class="metric-score">
+                            <span id="orgScore" class="metric-value">0</span>
+                            <span class="metric-max">/15</span>
+                        </div>
+                        <div class="metric-bar">
+                            <div id="orgBar" class="metric-fill" style="--score: 0;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Profile Stats -->
+                <div class="profile-stats">
+                    <h3 class="stats-title">Profile Statistics</h3>
+                    <div class="stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">Public Repos</span>
+                            <span id="repoCount" class="stat-value">0</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Total Stars</span>
+                            <span id="starCount" class="stat-value">0</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Followers</span>
+                            <span id="followerCount" class="stat-value">0</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Languages</span>
+                            <span id="langCount" class="stat-value">0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Top Skills -->
+                <div class="skills-section">
+                    <h3 class="skills-title">Top Skills Detected</h3>
+                    <div id="skillsList" class="skills-list"></div>
+                </div>
+
+                <!-- Recommendations -->
+                <div class="recommendations">
+                    <h3 class="recommendations-title">🎯 Actionable Recommendations</h3>
+                    <div id="recommendationsList" class="recommendations-list"></div>
+                </div>
+
+                <!-- Repository Highlights -->
+                <div class="repo-highlights">
+                    <h3 class="highlights-title">📦 Repository Analysis</h3>
+                    <div id="repoList" class="repo-list"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M16 2L21 12H27L22 18L25 28L16 22L7 28L10 18L5 12H11L16 2Z" fill="url(#gradient2)"/>
+                        <defs>
+                            <linearGradient id="gradient2" x1="5" y1="2" x2="27" y2="28">
+                                <stop offset="0%" style="stop-color:#667eea"/>
+                                <stop offset="100%" style="stop-color:#764ba2"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span>GitAnalyzer</span>
+                </div>
+                <p class="footer-tagline">Elevating GitHub portfolios, one analysis at a time.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#analyzer">Analyzer</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <a href="#">Documentation</a>
+                    <a href="#">API</a>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Privacy</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GitAnalyzer. Crafted with precision.</p>
+        </div>
+    </footer>
+
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
