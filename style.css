@@ -1605,19 +1605,17 @@ body {
 }
 
 
-/* ==================== COMPREHENSIVE RESPONSIVENESS ==================== */
 
-/* 1. Large Desktops (Ultra-wide) */
 @media (min-width: 1440px) {
     :root {
         --container-max: 1400px;
     }
     .hero-title {
-        font-size: 5rem; /* Larger text for big screens */
+        font-size: 5rem; 
     }
 }
 
-/* 2. Tablets & Small Laptops (MacBook Air/Pro size) */
+
 @media (max-width: 1024px) {
     :root {
         --spacing-xl: 2.5rem;
@@ -1643,11 +1641,11 @@ body {
     }
 
     .features-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
-/* 3. Small Tablets & Large Phones (Portrait) */
+
 @media (max-width: 768px) {
     .hero-title {
         font-size: 3rem;
@@ -1658,7 +1656,7 @@ body {
     }
 
     .nav-links {
-        display: none; /* Hide nav links on mobile - recommend adding a burger menu later */
+        display: none; 
     }
 
     .hero-stats {
@@ -1684,7 +1682,7 @@ body {
     }
 
     .features-grid {
-        grid-template-columns: 1fr; /* Single column for readability */
+        grid-template-columns: 1fr; 
     }
 
     .metrics-grid {
@@ -1696,7 +1694,6 @@ body {
     }
 }
 
-/* 4. Small Mobile Phones (iPhone SE size) */
 @media (max-width: 480px) {
     .hero-title {
         font-size: 2.2rem;
@@ -1724,47 +1721,47 @@ body {
         gap: 2rem;
     }
 
-    /* Floating cards move to bottom or hide to save space */
+ 
     .floating-card {
         display: none; 
     }
 }
 
-/* 5. Landscape Mode Fix for Phones */
+
 @media (max-height: 500px) and (orientation: landscape) {
     .hero {
         padding-top: 5rem;
     }
     .hero-visual {
-        display: none; /* Hide visual to show text clearly in landscape */
+        display: none; 
     }
 }
 
 
-/* ==================== TABLET & PHONE FIX ==================== */
+
 
 @media (max-width: 1024px) {
     .hero {
         flex-direction: column !important;
         padding-top: 120px !important;
-        overflow: hidden; /* Prevent horizontal scroll during blur animation */
+        overflow: hidden; 
     }
 
     .hero-visual {
         width: 100% !important;
         height: 300px !important;
-        order: -1; /* Photo ko text ke upar le aayega responsive mein */
+        order: -1; 
         margin-bottom: 20px;
     }
 
-    /* Cards ko mobile pe bich mein aane se rokne ke liye static position */
+    
     .floating-card {
         transform: scale(0.7) !important;
         opacity: 0.9;
-        pointer-events: none; /* Scroll karte waqt click handle na kare */
+        pointer-events: none; 
     }
 
-    /* Taaki Cards photo ke ekdum bich mein na ghuse */
+  
     .card-1 { left: 110% !important; top: 0% !important; }
     .card-2 { right: 110% !important; top: 40% !important; }
     .card-3 { left: 110% !important; bottom: 0% !important; }
@@ -1775,7 +1772,7 @@ body {
         font-size: 2rem !important;
     }
     
-    /* Mobile pe floating cards ko bilkul hata do ya ekdum side mein rakho */
+    
     .floating-card {
         display: none !important; 
     }
